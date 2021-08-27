@@ -51,11 +51,10 @@ public class WordGridService {
             }
         }
 
-
-        // Randomize and shuffle the coordinates in the list
-        Collections.shuffle(coordinates);
-
         for (String word : words) {
+            // Randomize and shuffle the coordinates in the list
+            Collections.shuffle(coordinates);
+
             // Loop through each coordinate and see which one could fit word
             for (Coordinate coordinate : coordinates) {
                 int x = coordinate.x;
